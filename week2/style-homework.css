@@ -80,7 +80,7 @@ body{
         font-weight: 200; /*the same*/
         font-size: 32px;
         color: #581a86;
-        align-self: flex-start;
+        /*align-self: flex-start;*/
         margin: 0;
 
         position: relative;
