@@ -105,11 +105,11 @@ body{
     }
 
     @keyframes geartext_ {
-        0%   {left: 0px}
-        25%  {left: 115px;}
-        50%  {left: 230px}  /*how to write a value represent the width of the div to replace exact pixel here?*/
-        75%  {left: 115px;}
-        100% {left: 0px}
+        0%   {left: -130px}
+        25%  {left: 0px;}
+        50%  {left: 130px}  /*how to write a value represent the width of the div to replace exact pixel here?*/
+        75%  {left: 0px;}
+        100% {left: -130px}
     }
     @keyframes hammer_ {
         0%   {top: 0px}
