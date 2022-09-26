@@ -1,0 +1,170 @@
+html{
+    background-color: #f8ae11;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+body{
+    margin-top: 170px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*food page*/
+.food{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fredoka One', cursive;
+    color: #000000;
+}
+.gear{display: none;}
+.fun{display: none;}
+
+#foodheader{
+    font-size: 58px;
+    margin: -10px -70px -5px 30px;
+}
+
+#foodtext{
+    font-size: 208px;
+    font-style: italic;
+    margin: -40px 20px 0 0;
+}
+
+#foodlist1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#foodlist2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/*gear page*/
+@media (max-width:1000px) {
+    html{
+        background-color: #984ad2;
+    }
+    body{
+        margin-top: 0;
+    }
+    img{
+        max-width: 160px;
+    }
+
+    .food{display: none;}
+    .fun{display: none;}
+    .gear{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 844px;
+    }
+
+    #gearheader{
+        font-family: 'Rubik Dirt', cursive;
+        text-align: center;
+        font-weight: 200; /*when it moved to html/body part it change?*/
+        font-size: 48px;
+        color: #ffffff;
+        margin: 0;
+    }
+    #geartext{
+        font-family: 'Rubik Dirt', cursive;
+        text-align: center;
+        font-weight: 200; /*the same*/
+        font-size: 32px;
+        color: #581a86;
+        align-self: flex-start;
+        margin: 0;
+
+        position: relative;
+        animation-name: geartext_;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    #hammer{
+        position: relative;
+        animation-name: hammer_;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    #wrench{
+        position: relative;
+        animation-name: wrench_;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes geartext_ {
+        0%   {left: 0px}
+        25%  {left: 115px;}
+        50%  {left: 230px}  /*how to write a value represent the width of the div to replace exact pixel here?*/
+        75%  {left: 115px;}
+        100% {left: 0px}
+    }
+    @keyframes hammer_ {
+        0%   {top: 0px}
+        25%  {top: 263px;}
+        50%  {top: 526px;}
+        75%  {top: 263px;}
+        100% {top: 0px}
+    }
+    @keyframes wrench_ {
+        0%   {bottom: 0px}
+        25%  {bottom: 263px;}
+        50%  {bottom: 526px;}
+        75%  {bottom: 263px;}
+        100% {bottom: 0px}
+    }
+
+}
+
+/*fun page*/
+@media (min-width:2000px) {
+    html{
+        background-color: #17b79d;
+    }
+    .food{display: none;}
+    .gear{display: none;}
+    .fun{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0;
+
+        font-family: 'Silkscreen', cursive;
+        word-spacing: 50%;
+    }
+
+    #funlist{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 699px;
+    }
+
+    #funheader{
+        color: #ffffff;
+        font-size: 128px;
+        font-weight: 400;
+        line-height: 80%;
+        margin: 0;
+    }
+
+    #funtext{
+        color: #000000;
+        font-size: 256px;
+        font-weight: 700;
+        margin: 0;
+    }
+}
