@@ -10,28 +10,22 @@
         main{
             height: 100vh;
         }
+        img{
+            max-width: 50px;
+        }
     </style>
 </head>
 <body>
     <header>
         <button id="colorBtn">Click Me!</button>
+        <button id="textBtn">Click for text</button>
+
+        <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/smiling-face-with-smiling-eyes_1f60a.png" alt="" id="imageBtn"> 
     </header>
 
     <main id="mainElem"></main>
 
-    <!-- put java-script on the bottom -->
-    <script>
-        let clrButton = document.getElementById("colorBtn")
-        console.log(clrButton)
-        const mnElement = document.getElementById("mainElem")
-
-        clrButton.addEventListener("click", ()=>{
-            let red = Math.random()*255
-            let green = Math.random()*255
-            let blue = Math.random()*255
-            console.log(red,green,blue)
-            mnElement.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")"
-        })
-    </script>
+    <!-- put java-script on the bottom and connect it to js file --> 
+    <script src="script.js"></script>
 </body>
 </html>
