@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aaa</title>
+    <title>Player's Neurons</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <img src="" alt="Logo here" class="navigation logo">
+            <img src="assets/logo.png" alt="Logo here" class="navigation logo">
             <ul>
                 <li class="navigation nav_btn" id="nav_btn"><a href="#">Home</a></li>
                 <li class="navigation nav_btn" id="nav_btn"><a href="#">Work</a></li>
@@ -25,7 +25,27 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <div class="slide">
+            <img src="assets/01.png" alt="img_01" class="img_">
+            <img src="assets/02.png" alt="img_02" class="img_">
+            <img src="assets/03.png" alt="img_03" class="img_">
+            <img src="assets/04.png" alt="img_04" class="img_">
+        </div>
+
+        <div>
+            <img src="assets/btn_01_cl.png" alt="btn_01" class="img_btn" onclick="currentSlide(1)">
+            <img src="assets/btn_02.png" alt="btn_02" class="img_btn" onclick="currentSlide(2)">
+            <img src="assets/btn_03.png" alt="btn_03" class="img_btn" onclick="currentSlide(3)">
+            <img src="assets/btn_04.png" alt="btn_04" class="img_btn" onclick="currentSlide(4)">
+        </div>
+
+        <div>
+            <img src="assets/btn_start.png" alt="start" class="time_btn" id="start_btn">
+            <img src="assets/btn_pause.png" alt="pause" class="time_btn" id="pause_btn">
+            <img src="assets/btn_restart.png" alt="restart" class="time_btn" id="restart_btn">
+        </div>
+    </main>
 
     <script src="homework-script.js"></script>
 </body>

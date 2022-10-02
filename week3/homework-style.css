@@ -1,14 +1,11 @@
 /* Basic */
 body{
     margin: 0;
-}
-img{
-    max-width: 100%;
+    background-color: black;
 }
 
 /* Header */
 nav{
-    background-color: antiquewhite;
     margin: 0;
     padding: 0;
 
@@ -16,6 +13,9 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+nav img{
+    width: 30px;
 }
 nav ul{
     margin: 0;
@@ -32,20 +32,38 @@ nav ul{
     justify-content: flex-end;
 }
 nav li a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .navigation{
     padding: 20px;
 }
-/* .now{
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-} */
 
 /* Main */
-main{
-    background-color: aquamarine;
+div{
+    margin: 100px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.slide{
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.img_{
+    max-width: 1100px;
+    display: none;
+}
+.img_btn{
+    max-width: 25px;
+}
+.time_btn{
+    max-width: 25px;
+}
+#pause_btn{
+    display: none;
 }
 
 /* Responsive */
