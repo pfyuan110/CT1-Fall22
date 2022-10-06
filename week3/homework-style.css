@@ -59,12 +59,12 @@ div{
 .img_btn{
     max-width: 25px;
 }
-.time_btn{
+/* .time_btn{
     max-width: 25px;
 }
 #pause_btn{
     display: none;
-}
+} */
 
 /* Responsive */
 @media (max-width: 500px) {

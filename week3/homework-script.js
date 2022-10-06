@@ -39,16 +39,16 @@ function currentSlide(n) {
 }
 
 //Automatic Time Events
-let start = document.getElementById("start_btn")
-let pause = document.getElementById("pause_btn")
-let restart = document.getElementById("restart_btn")
+// let start = document.getElementById("start_btn")
+// let pause = document.getElementById("pause_btn")
+// let restart = document.getElementById("restart_btn")
 
-start.addEventListener("click", ()=>{
-    start.style.display = "none"
-    pause.style.display = "flex"
-})
+// start.addEventListener("click", ()=>{
+//     start.style.display = "none"
+//     pause.style.display = "flex"
+// })
 
-pause.addEventListener("click", ()=>{
-    pause.style.display = "none"
-    start.style.display = "flex"
-})
+// pause.addEventListener("click", ()=>{
+//     pause.style.display = "none"
+//     start.style.display = "flex"
+// })
