@@ -15,7 +15,14 @@ function loaded() {
 }
 
 function togglePlaying() {
-    song.play()
+    if(!song.isPlaying()){
+        song.play()
+        button.html('pause')
+    } else {
+        song.pause()
+        button.html('play')
+    }
+
 }
 
 function draw() {
