@@ -26,14 +26,14 @@ function togglePlaying() {
 
 }
 
-function draw() {
-    background(0)
+// function draw() {
+//     background(0)
 
-    let vol = amp.getLevel()
-    let diam = map(vol, 0, 1, 10, 200)
-    console.log(vol)
+//     let vol = amp.getLevel()
+//     let diam = map(vol, 0, 1, 10, 200)
+//     console.log(vol)
 
-    fill(255,0,255)
-    noStroke()
-    ellipse(width/2, height/2, diam, diam)
-}
+//     fill(255,0,255)
+//     noStroke()
+//     ellipse(width/2, height/2, diam, diam)
+// }
