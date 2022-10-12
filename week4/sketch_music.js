@@ -5,13 +5,13 @@ let button
 function setup() {
     createCanvas(200, 200)
     song = loadSound('Paolo Pavan - Heart.mp3')
-    button = createButton('play')
-    button.mousePressed(togglePlaying)
     background(0)
 }
 
 function loaded() {
     console.log('loaded')
+    button = createButton('play')
+    button.mousePressed(togglePlaying)
 }
 
 function togglePlaying() {
@@ -22,9 +22,5 @@ function togglePlaying() {
         song.pause()
         button.html('play')
     }
-
-}
-
-function draw() {
 
 }
