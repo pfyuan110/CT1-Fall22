@@ -1,11 +1,12 @@
 let song
 let button
 let amp
+let xoff = 0
 
 let volHistory = []
 
 function setup() {
-    createCanvas(200, 200)
+    createCanvas(600, 600)
     angleMode(DEGREES)
     colorMode(HSB,100)
 
@@ -32,22 +33,25 @@ function togglePlaying() {
 }
 
 function draw() {
-    background(100)
+    background(0)
 
     let vol = amp.getLevel()
     volHistory.push(vol)        //what is push function?
-    //console.log(vol)
+    console.log(vol)
     
+    let hue = map(noise(xoff), 0, 1, 0, 15)
+    xoff += 0.01
+
     translate(width/2, height/2)
-    fill(50,90,90)
-    stroke(100,70)
+    fill(hue,90,40)
+    stroke(0,20)
     strokeWeight(1)
     for (let i = 0; i < 360; i++) {
-        let r = map(volHistory[i], 0, 1, 10, i)
+        let r = map(volHistory[i], 0, 1, 100, i)
         let posX = r * cos(i)
         let posY = r * sin(i)
 
-        let d = map(volHistory[i], 0, 0.5, 1, 100)
+        let d = map(volHistory[i], 0, 0.5, 1, 500)
         ellipse(posX, posY, d)
     }
 
