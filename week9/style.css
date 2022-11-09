@@ -7,14 +7,14 @@ html, body{
     justify-content: center;
 }
 
-div{
+main, div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* h3{
-    margin-bottom: 0px;
+h4{
+    margin-top: 0px;
 }
 
 img{
@@ -24,4 +24,4 @@ img{
 
 #sketch_holder{
     margin-bottom: 50px;
-} */
+}

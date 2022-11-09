@@ -5,16 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.dom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
     <link href="style.css" rel="stylesheet">
     <title>Flappy Bird</title>
 </head>
 <body>
-    <div>Teachable Machine Pose Model</div>
-    <button type="button" onclick="init()">Start</button>
-    <div><canvas id="canvas"></canvas></div>
-    <div id="label-container"></div>
-    <script src="sketch_pose.js"></script>
+    <h1>Flappy Bird</h1>
+    <div id="sketch_holder"></div>
+    <main>
+        <p>-----------------------------------------------------------------------------------------------------</p>
+        <h2>Process</h2>
+        <div>
+            <img src="assets/01.png" alt="">
+            <h4>Create the basic game flow</h4>
+        </div>
+        <div>
+            <img src="assets/02.png" alt="">
+            <h4>Create game over tip</h4>
+        </div>
+        <div>
+            <img src="assets/03.png" alt="">
+            <h4>Train the pose model</h4>
+        </div>
+        <div>
+            <img src="assets/04.png" alt="">
+            <h4>Apply the model into game</h4>
+        </div>
+    </main>
+    <script src="sketch.js"></script>
+    <script src="bird.js"></script>
+    <script src="pipe.js"></script>
 </body>
 </html>
